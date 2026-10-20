@@ -6,7 +6,7 @@
   <title>Portofolio Digital | Arkadio Kenzie</title>
   <style>
     /* -----------------------------------------------------------
-       1. Reset & Global Styles (Variabel Warna Modern)
+        1. Reset & Global Styles (Variabel Warna Modern)
     ----------------------------------------------------------- */
     :root {
       --bg-body: #0f172a;        /* Dark Navy */
@@ -30,7 +30,7 @@
     }
 
     html {
-      scroll-behavior: smooth; /* Scroll halus saat navigasi diklik */
+      scroll-behavior: smooth;
     }
 
     body {
@@ -41,7 +41,7 @@
     }
 
     /* -----------------------------------------------------------
-       2. Header & Hero Section
+        2. Header & Hero Section
     ----------------------------------------------------------- */
     header {
       background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), 
@@ -72,11 +72,11 @@
     }
 
     /* -----------------------------------------------------------
-       3. Navigasi Futuristik (Tombol Link CSS)
+        3. Navigasi Futuristik
     ----------------------------------------------------------- */
     nav {
       background-color: rgba(30, 41, 59, 0.9);
-      backdrop-filter: blur(10px); /* Efek kaca transparan */
+      backdrop-filter: blur(10px);
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -95,7 +95,7 @@
       padding: 12px 24px;
       background: #1e293b;
       border: 1px solid transparent;
-      border-radius: 50px; /* Pill shape */
+      border-radius: 50px;
       font-weight: 600;
       font-size: 0.9rem;
       text-transform: uppercase;
@@ -105,7 +105,6 @@
       overflow: hidden;
     }
 
-    /* Efek Glow & Gradient saat Hover */
     nav a:hover {
       background: var(--gradient-1);
       color: #0f172a;
@@ -115,7 +114,7 @@
     }
 
     /* -----------------------------------------------------------
-       4. Main Content & Container
+        4. Main Content & Container
     ----------------------------------------------------------- */
     .container {
       max-width: 1100px;
@@ -123,7 +122,6 @@
       padding: 0 20px;
     }
 
-    /* Section Styling */
     section {
       background-color: var(--bg-card);
       padding: 40px;
@@ -157,23 +155,13 @@
     }
 
     /* -----------------------------------------------------------
-       5. HOME Section (Profil Card)
+        5. HOME Section (Profil Card)
     ----------------------------------------------------------- */
     .profile-card {
       display: flex;
       gap: 30px;
       align-items: center;
       flex-wrap: wrap;
-    }
-
-    .profile-img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 5px solid var(--bg-body);
-      box-shadow: 0 0 25px rgba(0, 230, 118, 0.3);
-      outline: 2px solid var(--color-primary);
     }
 
     .profile-details {
@@ -211,7 +199,7 @@
     }
 
     /* -----------------------------------------------------------
-       6. PENDIDIKAN Section (Timeline)
+        6. PENDIDIKAN Section (Timeline)
     ----------------------------------------------------------- */
     .edu-list {
       list-style: none;
@@ -259,7 +247,6 @@
       font-size: 0.95rem;
     }
 
-    /* Training List */
     .training-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -287,10 +274,10 @@
     }
 
     /* -----------------------------------------------------------
-       7. JADWAL PELAJARAN (Tabel Modern)
+        7. JADWAL KULIAH / KEGIATAN
     ----------------------------------------------------------- */
     .table-container {
-      overflow-x: auto; /* Scrollbar horizontal jika tabel terlalu lebar */
+      overflow-x: auto;
       border-radius: 12px;
       box-shadow: var(--shadow-md);
     }
@@ -333,7 +320,7 @@
     }
 
     /* -----------------------------------------------------------
-       8. AKTIVITAS Section
+        8. AKTIVITAS Section
     ----------------------------------------------------------- */
     .activity-container {
       display: grid;
@@ -366,7 +353,7 @@
     }
 
     /* -----------------------------------------------------------
-       9. GALLERIES (Grid Foto Asli)
+        9. GALLERIES
     ----------------------------------------------------------- */
     .gallery-grid {
       display: grid;
@@ -382,7 +369,7 @@
       border: 2px solid #334155;
       box-shadow: var(--shadow-sm);
       transition: var(--transition);
-      aspect-ratio: 16/10; /* Menjaga rasio foto seragam */
+      aspect-ratio: 16/10;
     }
 
     .gallery-item:hover {
@@ -400,7 +387,7 @@
     }
 
     .gallery-item:hover img {
-      transform: scale(1.1); /* Zoom saat hover */
+      transform: scale(1.1);
     }
 
     .gallery-overlay {
@@ -425,7 +412,7 @@
     }
 
     /* -----------------------------------------------------------
-       10. Footer
+        10. Footer
     ----------------------------------------------------------- */
     footer {
       text-align: center;
@@ -441,7 +428,7 @@
     }
 
     /* -----------------------------------------------------------
-       11. Responsive Styles (Media Queries)
+        11. Responsive Styles
     ----------------------------------------------------------- */
     @media (max-width: 768px) {
       header h1 { font-size: 2.5rem; }
@@ -449,8 +436,6 @@
       nav { padding: 10px; gap: 8px; }
       nav a { padding: 10px 18px; font-size: 0.8rem; }
       section { padding: 25px; }
-      .profile-card { flex-direction: column; text-align: center; }
-      .profile-details { text-align: left; width: 100%; }
       .tag-container { justify-content: center; }
     }
   </style>
@@ -460,10 +445,10 @@
   <!-- 1. Header & Hero -->
   <header>
     <h1>Arkadio Kenzie</h1>
-    <p>Roblox Game Developer | Mahasiswa PENS Surabaya</p>
+    <p>Roblox Game Developer | Developer Roblox Surabaya</p>
   </header>
 
-  <!-- 2. Navigasi / Tombol Link (Hiasan CSS Gradasi & Glow) -->
+  <!-- 2. Navigasi -->
   <nav>
     <a href="#home">Home</a>
     <a href="#pendidikan">Pendidikan</a>
@@ -479,23 +464,20 @@
     <section id="home">
       <h2>🏠 PROFILE</h2>
       <div class="profile-card">
-        <!-- Foto Profil Placeholder (Silakan ganti src dengan foto Anda jika ada) -->
-        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=400&auto=format&fit=crop" alt="Arkadio Kenzie" class="profile-img">
-        <div class="profile-details">
+        <div class="profile-details" style="width: 100%;">
           <p><strong>Nama Lengkap:</strong> Arkadio Kenzie</p>
-          <p><strong>Status:</strong> Mahasiswa Aktif</p>
-          <p><strong>Institusi:</strong> PENS (Politeknik Elektronika Negeri Surabaya)</p>
+          <p><strong>Status:</strong> Developer Roblox / Pelajar</p>
+          <p><strong>Lokasi:</strong> Surabaya, Jawa Timur</p>
           <p><strong>Keahlian Utama:</strong> Luau Scripting, Building, Game Design on Roblox Platform.</p>
           
           <div class="tag-container">
             <span class="tag">Roblox Developer</span>
             <span class="tag">Luau Coder</span>
-            <span class="tag">PENS Student</span>
             <span class="tag">Surabaya Tech</span>
           </div>
           
           <p style="margin-top: 15px; color: var(--text-muted);">
-            Halo! Saya Arkadio. Fokus saya saat ini adalah mendalami pengembangan game di platform Roblox menggunakan bahasa pemrograman Luau sembari menempuh pendidikan di PENS.
+            Halo! Saya Arkadio. Fokus saya saat ini adalah mendalami pengembangan game di platform Roblox menggunakan bahasa pemrograman Luau serta aktif berkecimpung di dunia pemrograman.
           </p>
         </div>
       </div>
@@ -505,10 +487,6 @@
     <section id="pendidikan">
       <h2>🎓 PENDIDIKAN</h2>
       <ul class="edu-list">
-        <li class="edu-item">
-          <h3>PENS (Politeknik Elektronika Negeri Surabaya)</h3>
-          <p>Pendidikan Tinggi (Kuliah) - Sedang Ditempuh</p>
-        </li>
         <li class="edu-item">
           <h3>SMKN 1 Surabaya</h3>
           <p>Sekolah Menengah Kejuruan</p>
@@ -526,60 +504,56 @@
           <p>Pelatihan intensif pengembangan mekanisme game kompleks dan optimalisasi *script* client-server.</p>
         </div>
         <div class="training-card">
-          <strong>Algoritma & Struktur Data (PENS)</strong>
-          <p>Workshop dasar pemrograman untuk meningkatkan logika berpikir dan efisiensi kode.</p>
-        </div>
-        <div class="training-card">
           <strong>Kejuruan Teknik Komputer (SMKN 1 SBY)</strong>
           <p>Dasar-dasar jaringan, perangkat keras, dan software development.</p>
         </div>
       </div>
     </section>
 
-    <!-- 5. Section JADWAL (Tabel CSS Hiasan) -->
+    <!-- 5. Section JADWAL -->
     <section id="jadwal">
-      <h2>📅 JADWAL KULIAH</h2>
-      <p style="color: var(--text-muted); margin-bottom: 20px;">Berikut adalah perkiraan jadwal kegiatan akademik saya di PENS:</p>
+      <h2>📅 JADWAL KEGIATAN</h2>
+      <p style="color: var(--text-muted); margin-bottom: 20px;">Berikut adalah perkiraan jadwal kegiatan rutin harian saya:</p>
       <div class="table-container">
         <table>
           <thead>
             <tr>
               <th>Hari</th>
               <th>Waktu</th>
-              <th>Mata Kuliah / Kegiatan</th>
-              <th>Ruangan/Status</th>
+              <th>Kegiatan / Proyek</th>
+              <th>Lokasi/Status</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Senin</td>
-              <td>08:00 - 10:30</td>
-              <td>Pemrograman Algoritma</td>
-              <td>Lab Komputer</td>
+              <td>08:00 - 12:00</td>
+              <td>Roblox Development & Luau Coding</td>
+              <td>Studio / Rumah</td>
             </tr>
             <tr>
               <td>Selasa</td>
-              <td>10:00 - 12:30</td>
-              <td>Basis Data</td>
-              <td>Ruang Teori 2.1</td>
+              <td>10:00 - 14:00</td>
+              <td>Game Design & Map Building</td>
+              <td>Studio / Rumah</td>
             </tr>
             <tr>
               <td>Rabu</td>
-              <td>13:00 - 15:30</td>
-              <td>Workshop Game Dev</td>
-              <td>Lab Multimedia</td>
+              <td>13:00 - 17:00</td>
+              <td>Scripting & Debugging Client-Server</td>
+              <td>Studio / Rumah</td>
             </tr>
             <tr>
               <td>Kamis</td>
-              <td>08:00 - 10:30</td>
-              <td>Sistem Operasi</td>
-              <td>Lab Jaringan</td>
+              <td>08:00 - 12:00</td>
+              <td>UI/UX Design for Roblox Games</td>
+              <td>Studio / Rumah</td>
             </tr>
             <tr>
               <td>Jumat</td>
               <td>09:00 - 11:30</td>
-              <td>Matematika Diskrit</td>
-              <td>Ruang Teori 1.5</td>
+              <td>Community Discussion & Sharing</td>
+              <td>Online / Surabaya</td>
             </tr>
           </tbody>
         </table>
@@ -595,22 +569,17 @@
           <p>Aktif merancang, mengodekan (*Luau*), dan mempublikasikan proyek game di platform Roblox. Berpengalaman dalam DataStore, RemoteEvents, dan pembuatan GUI interaktif.</p>
         </div>
         <div class="act-card">
-          <h3>Mahasiswa Teknik PENS</h3>
-          <p>Mengikuti perkuliahan, praktikum laboratorium, dan mengerjakan proyek-proyek pemrograman akademik untuk memperdalam ilmu komputer.</p>
-        </div>
-        <div class="act-card">
           <h3>Komunitas Game Dev SBY</h3>
           <p>Berpartisipasi dalam diskusi dan *sharing session* bersama pegiat pengembangan game di Surabaya, baik alumni SMKN 1 Surabaya maupun komunitas luas.</p>
         </div>
       </div>
     </section>
 
-    <!-- 7. Section GALLERIES (Foto-foto Asli Pilihan) -->
+    <!-- 7. Section GALLERIES -->
     <section id="galleries">
       <h2>🖼️ GALLERIES</h2>
-      <p style="color: var(--text-muted); margin-bottom: 20px;">Koleksi visual terkait Roblox Development, PENS, dan Kota Surabaya.</p>
+      <p style="color: var(--text-muted); margin-bottom: 20px;">Koleksi visual terkait Roblox Development dan Kota Surabaya.</p>
       <div class="gallery-grid">
-        <!-- Foto 1: Roblox Studio (Tema Roblox Dev) -->
         <div class="gallery-item">
           <img src="https://images.unsplash.com/photo-1614332287897-cdc485fa562d?q=80&w=600&auto=format&fit=crop" alt="Roblox Studio Dev">
           <div class="gallery-overlay">
@@ -619,16 +588,6 @@
           </div>
         </div>
         
-        <!-- Foto 2: PENS Surabaya (Tema PENS) -->
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1592210454359-9043f067919b?q=80&w=600&auto=format&fit=crop" alt="Kampus PENS SBY">
-          <div class="gallery-overlay">
-            <h4>PENS Kampus</h4>
-            <p>Atmosfer lingkungan belajar teknik.</p>
-          </div>
-        </div>
-        
-        <!-- Foto 3: Coding Screen (Tema Tech) -->
         <div class="gallery-item">
           <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=600&auto=format&fit=crop" alt="Coding Luau">
           <div class="gallery-overlay">
@@ -637,7 +596,6 @@
           </div>
         </div>
         
-        <!-- Foto 4: Surabaya Cityscape (Tema Surabaya) -->
         <div class="gallery-item">
           <img src="https://images.unsplash.com/photo-1611637576109-b6f701254758?q=80&w=600&auto=format&fit=crop" alt="Surabaya Icon">
           <div class="gallery-overlay">
